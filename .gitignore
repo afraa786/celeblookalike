@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build files
+build/
+dist/
+*.egg-info/
+*.so
+
+# Data files & models
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pb
+*.pth
+*.pt
+*.onnx
+
+# TensorFlow / OpenCV / large binaries
+*.pyd
+*.bin
+*.dat
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.ipynb_checkpoints
+
+# Git LFS tracked files (if used)
+*.zip
+*.tar.gz
+*.mp4
+*.jpg
+*.png
+
+# Custom directories to ignore
+data/
