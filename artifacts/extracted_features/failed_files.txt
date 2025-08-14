@@ -1,0 +1,8 @@
+data/Abhay Deol/16
+data/Amy Jackson/21
+data/Akshay Kumar/23
+data/Abhishek Bachchan/9
+data/Ayushmann Khurrana/22
+data/Arjun Kapoor/20
+data/Paresh Rawal/11
+data/Anushka Sharma/34

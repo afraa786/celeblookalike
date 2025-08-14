@@ -36,7 +36,7 @@ MarkupSafe==3.0.2
 mdurl==0.1.2
 mtcnn==0.1.0
 narwhals==2.1.1
-numpy==1.23.5
+numpy==1.26.4
 oauthlib==3.3.1
 opencv-python==4.11.0.86
 opencv-python-headless==4.5.5.64
@@ -53,7 +53,6 @@ Pygments==2.19.2
 Pympler==1.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
-pywin32==311
 PyYAML==6.0.2
 referencing==0.36.2
 requests==2.32.4
