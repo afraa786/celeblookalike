@@ -15,9 +15,9 @@
 ### Displays the best matching celebrity face
 
 ### Deployed on Cloudflare
+
+### 🏗️ Project Structure
 <pre>
-```
-🏗️ Project Structure
 ├── artifacts
 │   ├── extracted_features     # Pre-computed celebrity embeddings
 │   ├── pickle_format_data     # Pickle files storing feature vectors
@@ -33,7 +33,6 @@
 ├── run.py                     # Entry point for Streamlit app
 ├── requirements.txt           # Dependencies
 └── README.md                  # Project documentation
-```
 </pre>
 
 ## ⚙️ Tech Stack
