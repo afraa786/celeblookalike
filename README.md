@@ -75,36 +75,7 @@ Each embedding represents unique facial characteristics
 ## Computes the closeness between two feature vectors
 
 Formula:
-
-𝑠
-𝑖
-𝑚
-𝑖
-𝑙
-𝑎
-𝑟
-𝑖
-𝑡
-𝑦
-=
-𝐴
-⋅
-𝐵
-∣
-∣
-𝐴
-∣
-∣
-  
-∣
-∣
-𝐵
-∣
-∣
-similarity=
-∣∣A∣∣∣∣B∣∣
-A⋅B
-	​
+similarity = (A · B) / (||A|| × ||B||)​
 
 
 ### Helps identify which celebrity embedding is closest to the uploaded face
