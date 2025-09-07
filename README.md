@@ -3,6 +3,9 @@
 ### A web application that allows users to upload an image and match their face with the closest celebrity face.
 
 ### The application uses the VGGFace deep learning model for feature extraction and compares faces using cosine similarity to find the most similar celebrity match.
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/15a4d4e1-e14a-4189-ab40-901c59f587e5" />
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/16774e7b-ee6d-4e33-aa55-ff2d4b1c1cb3" />
+
 
 ## 📌 Features
 
