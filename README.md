@@ -1,4 +1,4 @@
-# ✨ Face Matching Application
+# ✨ Celebrity Matching Application
 
 ### A web application that allows users to upload an image and match their face with the closest celebrity face.
 
