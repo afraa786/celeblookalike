@@ -55,73 +55,74 @@ Each embedding represents unique facial characteristics
 
 ## 🔍 VGGFace Architecture Details
 
-### Input Size: 224 × 224 RGB image
+Input Size: 224 × 224 RGB image
 
-### Convolutional Layers: 13 layers with 3×3 filters (for VGG16) or 16 layers (for VGG19)
+Convolutional Layers: 13 layers with 3×3 filters (for VGG16) or 16 layers (for VGG19)
 
-### Activation Function: ReLU (Rectified Linear Unit)
+Activation Function: ReLU (Rectified Linear Unit)
 
-### GPU acceleration support for faster inference
+GPU acceleration support for faster inference
 
-### Pooling Layers: Max pooling (2×2) after convolutional blocks
+Pooling Layers: Max pooling (2×2) after convolutional blocks
 
-### Fully Connected Layers:
+Fully Connected Layers:
 
-### Dense layers (4096 units each)
+Dense layers (4096 units each)
 
-### Final softmax for classification (in pre-trained version)
+Final softmax for classification (in pre-trained version)
 
 ### Modified for Face Recognition: Instead of softmax classification, we use the second-last FC layer (embeddings) as feature vectors
 
 ## 3. Cosine Similarity
 
-## Computes the closeness between two feature vectors
+Computes the closeness between two feature vectors
 
 Formula:
+```
 similarity = (A · B) / (||A|| × ||B||)​
-
+```
 
 ### Helps identify which celebrity embedding is closest to the uploaded face
 
 ## 🚀 Installation & Running the Application
-### Step 1: Create a Virtual Environment
+Step 1: Create a Virtual Environment
 ```
 conda create --name face_match_env python=3.8
 conda activate face_match_env
 ```
-### Step 2: Install Dependencies
+Step 2: Install Dependencies
 ```
 pip install -r requirements.txt
 ```
-### Step 3: Run the Streamlit Application
+Step 3: Run the Streamlit Application
 ```
 python run.py
 ```
 
 ## 📂 Data & Artifacts
 
-### data/ → Contains celebrity dataset images
+data/ → Contains celebrity dataset images
 
-### artifacts/extracted_features/ → Pre-computed embeddings from VGGFace
+artifacts/extracted_features/ → Pre-computed embeddings from VGGFace
 
-### artifacts/pickle_format_data/ → Pickle files storing celebrity feature vectors
+artifacts/pickle_format_data/ → Pickle files storing celebrity feature vectors
 
-### artifacts/upload/ → Uploaded user images during runtime
+artifacts/upload/ → Uploaded user images during runtime
 
 ## 🖼️ How It Works
 
-### Upload Image → User uploads a face image
+Upload Image → User uploads a face image
 
-### Preprocessing → Resize to 224×224, normalization, and face detection
+Preprocessing → Resize to 224×224, normalization, and face detection
 
-### Feature Extraction → VGGFace extracts embeddings (4096-d vector)
+Feature Extraction → VGGFace extracts embeddings (4096-d vector)
 
-### Similarity Check → Compare uploaded image embeddings with celebrity dataset embeddings using cosine similarity
+Similarity Check → Compare uploaded image embeddings with celebrity dataset embeddings using cosine similarity
 
 ### Output → Display celebrity with the highest similarity score
 
 ### 📜 Example Usage
 
-### Run the app → Upload your image → See your closest celebrity match
+Run the app → Upload your image → See your closest celebrity match
 
 ### Example: Upload an image → Output shows “Matched with Chris Hemsworth (Similarity: 0.92)
